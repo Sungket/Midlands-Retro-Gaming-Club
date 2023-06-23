@@ -1,0 +1,144 @@
+@font-face {
+    font-family: "Codystar-Light";
+    src: url(./fonts/Codystar-Light.ttf);
+}
+
+@font-face {
+    font-family: "Codystar-Regular";
+    src: url(./fonts/Codystar-Regular.ttf);
+}
+
+
+h1 {
+    font-family: 'Bangers';
+    font-size: 50px;
+    color: goldenrod;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Bangers';
+    font-size: 25px;
+    color: goldenrod;
+    margin-bottom: 5px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    position:sticky;
+    top: 0;
+    background-color: white;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    font-family: Codystar-Regular;
+    display: inline-block;
+    font-size: 24px;
+}
+
+#games {
+    display: flex;
+    width: auto;
+}
+
+#games img {
+    max-width: 180px;
+}
+
+#tournaments {
+    color: white;
+    width: 100%;
+    height: 21rem;
+    background-image: url(fightstick.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#tournaments h4 {
+    padding-top: 5rem;
+    padding-left: 2rem;
+    color: white;
+}
+
+#tournaments p {
+    padding-left: 2rem;
+}
+
+footer {
+    background-color: navy;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Mobile Screens */
+@media only screen and (max-width: 480px) {
+    * {
+        width: fit-content;
+    }
+    
+    #games {
+        display: none;
+    }
+
+    #tournaments h4 {
+        font-size: 40px;
+    }
+
+    #tournaments p {
+        font-size: 30px;
+    }
+
+    #join label{
+        font-size: 25px;
+    }
+
+    #join input {
+        font-size: 25px;
+    }
+
+    #join button {
+        font-size: 2em;
+    }
+
+    h4 {
+        font-size: 40px;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav li {
+        display: block;
+    }
+}
+
+/* Tablets */
+@media only screen and (max-width: 768px) and (min-width: 481px){
+    * {
+        width: auto;
+        background-color: lightgray;
+    }
+    
+    #games {
+        display: inline-block;
+        max-width: 765px;
+        min-width: 764px;
+    }
+}
